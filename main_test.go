@@ -22,14 +22,14 @@ func Test_lcm(t * testing.T) {
 		{a: 18, b: 12, expected: 36},	
 		// Validation
 			// One number is 0
-		{a: 0, b: 0, expected: 0},
+		{a: 0, b: 5, expected: 0},
+		{a: 0, b: 1, expected: 0},
 			// One number is 1
 		{a: 6, b: 1, expected: 6},
 			// Negative Numbers	
 		{a: 2, b: -5, expected: 10},
 			// Float Numbers	
 		// {a: 1.75, b: 8.25, expected: 10},
-
 	}
 
 	for _,input := range inputs{
