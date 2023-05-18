@@ -34,6 +34,8 @@ func Test_lcm(t * testing.T) {
 
 	for _,input := range inputs{
 		result := lcm(input.a, input.b)
+		// result := lcm_prime(input.a, input.b)
+		// result := lcm_greater(input.a, input.b)
 		if result != input.expected {
 			t.Errorf("\"lcm(%d, %d)\" FAILED, expected -> %v, got -> %v", input.a, input.b, input.expected, result)
 		} else {
