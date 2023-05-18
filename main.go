@@ -16,6 +16,15 @@ func main(){
 
 // Function to return LCM of two numbers
 func lcm(a int, b int)int {
+	if a == 0 || b == 0 {
+		return 0;
+	}
+	if a == 1 {
+		return b;
+	}
+	if b == 1 {
+		return a;
+	}
     return (a / gcd(a, b)) * b;
 }
 
